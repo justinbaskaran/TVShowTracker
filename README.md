@@ -1,6 +1,7 @@
 # TVShowTracker
-Instructions on how to use it
-#THIS ASSUMES YOU HAVE APACHE 2 INSTALLED
+-------------------------------------------
+THIS ASSUMES YOU HAVE APACHE 2 INSTALLED
+----------------------------------------
 If you need instructions on how to do install apache...
 Mac's: In the command line run "[package installer] install apache2"
 Linux: In the command line run "apt-get install apache2"
