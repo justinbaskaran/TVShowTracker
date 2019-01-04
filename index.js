@@ -34,7 +34,11 @@ $.ajax({
 
       // call setHours to take the time out of the comparison
       if(inputDate.setHours(0,0,0,0) >= todaysDate.setHours(0,0,0,0)) {
-        newElements.push(elements[j])
+       newElements.push(elements[j])
+         if(inputDate.setHours(0,0,0,0) == todaysDate.setHours(0,0,0,0)) {
+          newElements = [];
+          newElements.push(elements[j])
+        }
       }
 
     }
@@ -75,8 +79,12 @@ $.ajax({
       var todaysDate = new Date();
 
       // call setHours to take the time out of the comparison
-      if(inputDate.setHours(0,0,0,0) > todaysDate.setHours(0,0,0,0)) {
-        newElements.push(elements[j])
+       if(inputDate.setHours(0,0,0,0) >= todaysDate.setHours(0,0,0,0)) {
+       newElements.push(elements[j])
+         if(inputDate.setHours(0,0,0,0) == todaysDate.setHours(0,0,0,0)) {
+          newElements = [];
+          newElements.push(elements[j])
+        }
       }
 
     }
@@ -119,8 +127,12 @@ $.ajax({
       var todaysDate = new Date();
 
       // call setHours to take the time out of the comparison
-      if(inputDate.setHours(0,0,0,0) > todaysDate.setHours(0,0,0,0)) {
-        newElements.push(elements[j])
+       if(inputDate.setHours(0,0,0,0) >= todaysDate.setHours(0,0,0,0)) {
+       newElements.push(elements[j])
+         if(inputDate.setHours(0,0,0,0) == todaysDate.setHours(0,0,0,0)) {
+          newElements = [];
+          newElements.push(elements[j])
+        }
       }
 
     }
@@ -160,8 +172,12 @@ $.ajax({
       var todaysDate = new Date();
 
       // call setHours to take the time out of the comparison
-      if(inputDate.setHours(0,0,0,0) > todaysDate.setHours(0,0,0,0)) {
-        newElements.push(elements[j])
+      if(inputDate.setHours(0,0,0,0) >= todaysDate.setHours(0,0,0,0)) {
+       newElements.push(elements[j])
+         if(inputDate.setHours(0,0,0,0) == todaysDate.setHours(0,0,0,0)) {
+          newElements = [];
+          newElements.push(elements[j])
+        }
       }
 
     }
@@ -201,10 +217,13 @@ $.ajax({
       var todaysDate = new Date();
 
       // call setHours to take the time out of the comparison
-      if(inputDate.setHours(0,0,0,0) > todaysDate.setHours(0,0,0,0)) {
-        newElements.push(elements[j])
+      if(inputDate.setHours(0,0,0,0) >= todaysDate.setHours(0,0,0,0)) {
+       newElements.push(elements[j])
+         if(inputDate.setHours(0,0,0,0) == todaysDate.setHours(0,0,0,0)) {
+          newElements = [];
+          newElements.push(elements[j])
+        }
       }
-
     }
     console.log( "BBT" + newElements);
     if (newElements.length > 0)
