@@ -33,7 +33,7 @@ $.ajax({
       var todaysDate = new Date();
 
       // call setHours to take the time out of the comparison
-      if(inputDate.setHours(0,0,0,0) > todaysDate.setHours(0,0,0,0)) {
+      if(inputDate.setHours(0,0,0,0) >= todaysDate.setHours(0,0,0,0)) {
         newElements.push(elements[j])
       }
 
